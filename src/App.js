@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h1>
+          React Redux Practice
+        </h1>
+          <p>Store | Reducer | Action | Subscribe</p>
+          <p>Store = Will Hold All of our Application Data/State </p>
+          <p>Reducer = A function who returns a specific ammount of state/Data  and Must have Two Parameter (state, action)</p>
+          <p>Action = Detect Event Occurs</p>
+          <p>Dispatch = Something Will be Happend With Data</p>
+          <p>Subscribe = Subscribe Redux to get Redux Data</p>     
+          <p>install Redux = npm install redux</p>     
     </div>
   );
 }
