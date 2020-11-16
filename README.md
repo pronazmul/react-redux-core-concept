@@ -11,6 +11,9 @@ install redux and react-redux
 - create a mapDispatchToProps function (if you wish to update the state)
 - connect your app to the redux store
 <p>See below for a more detailed description of each of the above steps.</p>
+
+> # Installation Command
+
 ```sh
 $ composer create-project --prefer-dist laravel/laravel laravel_react_crud
 $ npm install
