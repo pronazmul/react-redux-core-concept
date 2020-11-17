@@ -1,13 +1,14 @@
+import React from 'react'
+import { Provider } from 'react-redux'
+import store from './Components/Store'
+import TestComponent from './Components/TestComponent'
 
-function App() {
+const App = () => {
   return (
-      <>
-        <h1>
-          React Redux Practice
-        </h1>
-        
-    </>
-  );
-}
+    <Provider store ={store}>
+      <TestComponent/>
+    </Provider>
+  )
+};
 
 export default App;
