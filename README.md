@@ -1,6 +1,10 @@
 <p align="center"><a href="#" ><img src="https://i.ibb.co/Y74tKds/lz1cf2chf.png" width="300"></a></p>
- <h1 align="center">Full Stack Web Application Developer!</h1>
-> ## React Redux Practice
+ <h1 align="center">React Redux Core Concep!</h1>
+
+> ## What is Redux !
+
+<p align="center"><a href="#" ><img src="https://i.ibb.co/wRM7hpt/Redux-Data-Flow-Diagram-49fa8c3968371d9ef6f2a1486bd40a26.gif" width="300"></a></p>
+
 
 > Here is a quick overview of all the steps required to add redux to your react application:
 install redux and react-redux
