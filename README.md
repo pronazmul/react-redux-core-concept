@@ -86,3 +86,13 @@ There is still one thing to do. You need to use react-redux’s connect method t
             }
             export default connect(mapStateToProps)(App);
 ```
+
+>> Way 2 : useSelector () Hook
+
+```sh
+            
+            import { useSelector } from 'react-redux';
+            
+            const userData = useSelector(state=>state.isSignIn)
+
+```
