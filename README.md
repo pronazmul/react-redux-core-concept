@@ -2,12 +2,21 @@
  <h1 align="center">React Redux Core Concep!</h1>
 
 > ## What is Redux !
-
+Redux is a predictable state container for JavaScript apps, and a very valuable tool for organizing application state. It’s a popular library to manage state in React apps, but it can be used just as well with Angular, Vue.js or just plain old vanilla JavaScript.
 <p align="center"><a href="#" ><img src="https://i.ibb.co/wRM7hpt/Redux-Data-Flow-Diagram-49fa8c3968371d9ef6f2a1486bd40a26.gif" width="500"></a></p>
 
 
-> Here is a quick overview of all the steps required to add redux to your react application:
-install redux and react-redux
+> # Here is the main steps required in ReduxJs:
+<h2>What is Reducer?</h2>
+>A reducer is a pure function that takes the previous state and an action as arguments and returns a new state.
+
+```sh
+function myReducer(previousState, action) => {
+  // use the action type and payload to create a new state based on
+  // the previous state.
+  return newState;
+}
+```
 - create a reducer.
 - create a store passing in this reducer.
 - wrap your app in a Provider passing in the store.
