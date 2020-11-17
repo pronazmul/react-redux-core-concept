@@ -50,6 +50,39 @@ function myReducer(previousState, action) => {
         const store = createStore(todoReducer);
 ```
 
+<h2>What is Provider?</h2>
+
+>> To give React access the store you need to pass the store into the app. To do this you firstly need to import { Provider } from 'react-redux'. Then you wrap your app in the Provider.
+
+```sh
+        const store = createStore(counter);
+        render(
+            <Provider store={store}>
+            <App />
+            </Provider>,
+            document.getElementById(‘root’)
+        );
+```
 
 
+<h2>How to Access Redux State?</h2>
 
+>> Way 1 : Next to access the redux state in a component you need to write a function called mapStateToProps . This function should return an object that you can then reference in your component through it’s props.
+
+There is still one thing to do. You need to use react-redux’s connect method to connect our react and the redux store.
+
+```sh
+            import React from 'react'
+            import { connect } from "react-redux";
+            const App = (props) => {
+            return <p>props.count</p>;
+            
+            };
+            function mapStateToProps(state) {
+            return {
+                count: state
+            }
+            
+            }
+            export default connect(mapStateToProps)(App);
+```
