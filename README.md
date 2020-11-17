@@ -39,21 +39,15 @@ function myReducer(previousState, action) => {
 ```
 
 
-<h2>What is Action?</h2>
+<h2>What is Store?</h2>
 
->> A reducer is a pure function that takes the previous state and an action as arguments and returns a new state.
+>> In Redux, the store refers to the object that brings actions (that represent what happened) and reducers (that update the state according to those actions) together. There is only a single store in a Redux application.
 
 ```sh
-        export function addTodo({ task }) {
-        return {
-            type: 'ADD_TODO',
-            payload: {
-            task,
-            completed: false
-            },
-        }
-        }
-}
+        import { createStore } from 'redux';
+        import todoReducer from './reducers';
+
+        const store = createStore(todoReducer);
 ```
 
 
