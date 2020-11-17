@@ -3,7 +3,7 @@
 
 > ## What is Redux !
 
-<p align="center"><a href="#" ><img src="https://i.ibb.co/wRM7hpt/Redux-Data-Flow-Diagram-49fa8c3968371d9ef6f2a1486bd40a26.gif" width="300"></a></p>
+<p align="center"><a href="#" ><img src="https://i.ibb.co/wRM7hpt/Redux-Data-Flow-Diagram-49fa8c3968371d9ef6f2a1486bd40a26.gif" width="500"></a></p>
 
 
 > Here is a quick overview of all the steps required to add redux to your react application:
