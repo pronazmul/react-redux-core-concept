@@ -8,7 +8,8 @@ Redux is a predictable state container for JavaScript apps, and a very valuable 
 
 > # Here is the main steps required in ReduxJs:
 <h2>What is Reducer?</h2>
->A reducer is a pure function that takes the previous state and an action as arguments and returns a new state.
+
+>>> A reducer is a pure function that takes the previous state and an action as arguments and returns a new state.
 
 ```sh
 function myReducer(previousState, action) => {
