@@ -1,5 +1,5 @@
 <p align="center"><a href="#" ><img src="https://i.ibb.co/Y74tKds/lz1cf2chf.png" width="300"></a></p>
-
+ <h1 align="center">Full Stack Web Application Developer!</h1>
 > ## React Redux Practice
 
 > Here is a quick overview of all the steps required to add redux to your react application:
