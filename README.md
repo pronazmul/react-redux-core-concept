@@ -9,35 +9,29 @@ Redux is a predictable state container for JavaScript apps, and a very valuable 
 
 > # Here is the main steps required in ReduxJs:
 
+<h2>What is Action?</h2>
+
+>> An action is just an object that always contains the type of logic that is going to be executed on the state (a string that we can name it as we want, but the convention asks it to be upper case and snack case) and the payload or data that is coming from the action.
+
+```sh
+    const action = {type: "SET_USER_FIRST_NAME", payload: "Alex"}
+```
 <h2>What is Reducer?</h2>
 
 >> A reducer is a pure function that takes the previous state and an action as arguments and returns a new state.
 
 ```sh
 function myReducer(previousState, action) => {
-  // use the action type and payload to create a new state based on
-  // the previous state.
-  return newState;
+  switch(action.type) {
+        case 'INCREMENT':
+        return state = state + 1;
+        case 'DECREMENT':
+        return state = state - 1;
+        default:
+        return state;
+    }
 }
 ```
-
-<h2>What is Action?</h2>
-
->> A reducer is a pure function that takes the previous state and an action as arguments and returns a new state.
-
-```sh
-        export function addTodo({ task }) {
-        return {
-            type: 'ADD_TODO',
-            payload: {
-            task,
-            completed: false
-            },
-        }
-        }
-}
-```
-
 
 <h2>What is Store?</h2>
 
@@ -87,12 +81,56 @@ There is still one thing to do. You need to use react-redux’s connect method t
             export default connect(mapStateToProps)(App);
 ```
 
->> Way 2 : useSelector () Hook
+>> Way 2 : useSelector () Hook | Let’s start by importing useSelector from the react-redux library. useSelector is a function that takes the current state as an argument and returns whatever data you want from it.
 
 ```sh
-            
             import { useSelector } from 'react-redux';
-            
             const userData = useSelector(state=>state.isSignIn)
+```
+
+<h2>How to Update/Change Redux State?</h2>
+
+>> Way 1 : To fire actions we need to make another function called mapDispatchToProps . This will allow us to fire actions from our components and update the state.
+
+There is still one thing to do. You need to use react-redux’s connect method to connect our react and the redux store.
+
+```sh
+            import React from 'react'
+            import { connect } from "react-redux";
+            const App = (props) => {
+                <button onClick={props.increment}>+</button>
+                <button  onClick={props.decrement}>-</button>
+            }
+
+            function mapDispatchToProps(dispatch) {
+                return {
+                increment: () => dispatch({type: 'INCREMENT'}),
+                decrement: () => dispatch({type: 'DECREMENT'})
+                };
+            
+            }
+            export default connect(null, mapDispatchToProps)(App);
+```
+
+>> Way 2 : useDispatchI() Hook | Now let’s try to dispatch an action to the store by importing useDispatch and implementing it to the scope of the functional component.
+
+```sh
+            import React from 'react'
+            import { useSelector, useDispatch } from 'react-redux';
+           
+        const DempPage= () => {
+            const name = useSelector(state=>state.name)
+            const dispatch = useDispatch()
+
+            return (
+                <>
+                    <h1>{name}</h1>
+                    <button onClick={dispatch({type:"UPDATE_NAME", payload: "Nuhidul Islam"})}>
+                </>
+            )
+        }
+            
+
+
 
 ```
