@@ -130,7 +130,7 @@ There is still one thing to do. You need to use react-redux’s connect method t
             )
         }
             
-
+ 
 
 
 ```
