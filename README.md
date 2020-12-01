@@ -1,5 +1,5 @@
 <p align="center"><a href="#" ><img src="https://i.ibb.co/Y74tKds/lz1cf2chf.png" width="300"></a></p>  
- <h1 align="center">React Redux Core Concep!</h1>
+ <h1 align="center">React Redux Core Concep!</h1> 
 
 > ## What is Redux !
 Redux is a predictable state container for JavaScript apps, and a very valuable tool for organizing application state. It’s a popular library to manage state in React apps, but it can be used just as well with Angular, Vue.js or just plain old vanilla JavaScript.
